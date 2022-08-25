@@ -26,7 +26,7 @@ class Comment(TimeStampedModel):
                 user_model.User,
                 null=True,
                 on_delete=models.CASCADE,
-                related_name='post_author'
+                related_name='comment_author'
             )
     posts = models.ForeignKey(
                 Post,

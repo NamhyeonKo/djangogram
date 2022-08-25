@@ -1,0 +1,8 @@
+Here is main.html
+
+<form action="{% url 'users:main' %}" method="post">
+    {% csrf_token %}
+    <input type="input" name="username" placeholder="Username">
+    <input type="input" name="password" placeholder="Password">
+    <input type="submit" value="Login">
+</form>
